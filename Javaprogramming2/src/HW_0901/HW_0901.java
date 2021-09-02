@@ -43,5 +43,6 @@ public class HW_0901 {
             }
         }
 
+        System.out.println();
     }
 }
