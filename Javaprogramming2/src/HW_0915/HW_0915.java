@@ -1,7 +1,8 @@
-package Lec_0913;
+package HW_0915;
 
 import java.util.Scanner;
-public class Lec_0913_최대공약수 {
+
+public class HW_0915 {
     public static int gcd(int num1, int num2) {
         int result = 1;
         if (num1 > num2) {
@@ -19,10 +20,6 @@ public class Lec_0913_최대공약수 {
         }
         return result;
     }
-    public static int getGcd(int x, int y) {
-        if (x % y == 0) return y;
-        return getGcd(y, x%y);
-    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
@@ -39,8 +36,6 @@ public class Lec_0913_최대공약수 {
             }
         }
         System.out.println(temp);
-
-
 
     }
 }
