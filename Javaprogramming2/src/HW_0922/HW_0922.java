@@ -4,11 +4,7 @@ import java.util.Scanner;
 
 
 public class HW_0922 {
-    static String toBinaryString(int number) {
-        String zero = "00000000000000000000000000000000";
-        String binary = zero + Integer.toBinaryString(number);
-        return binary.substring(binary.length()-12);
-    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = 0;
