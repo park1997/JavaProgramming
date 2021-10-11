@@ -6,6 +6,7 @@ public class Option {
     private int height; // 높이정해 주기
     private int interval;
     private String translate_url = "https://papago.naver.com/";
+    private String spellcheck_url = "https://search.naver.com/search.naver?where=nexearch&sm=top_sly.hst&fbm=0&acr=1&acq=%EB%A7%9E%EC%B6%A4&qdt=0&ie=utf8&query=%EB%A7%9E%EC%B6%A4%EB%B2%95%EA%B2%80%EC%82%AC%EA%B8%B0";
     private String windowSize;
 
     public Option() {
@@ -16,6 +17,13 @@ public class Option {
         this.windowSize = String.format("window-size=%sx%s",width,height);
     }
 
+    public String getSpellcheck_url() {
+        return spellcheck_url;
+    }
+
+    public void setSpellcheck_url(String spellcheck_url) {
+        this.spellcheck_url = spellcheck_url;
+    }
 
     public int getWidth() {
         return width;

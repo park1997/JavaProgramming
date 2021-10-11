@@ -11,12 +11,15 @@ public class Main {
         System.out.println("3. 맞춤법 검사기");
         System.out.println("4. Data 조회");
         System.out.println("4. 종료");
+        System.out.println("-".repeat(20));
     }
     public static void menu2() {
+        System.out.println("-".repeat(10)+"DB메뉴"+"-".repeat(10));
         System.out.println("1. 한국어 -> 영어 번역 Data");
         System.out.println("2. 영어 -> 한국어 번역 Data");
         System.out.println("3. 맞춤법 검사 Data");
         System.out.println("4. 종료");
+        System.out.println("-".repeat(20));
     }
     public static void main(String[] args) throws InterruptedException {
 
@@ -53,18 +56,27 @@ public class Main {
                 sc.nextLine();
                 String text_k = sc.nextLine();  // 한국어 입력
                 String result = translater.translate_KtoE(text_k, option1);
-                System.out.println(text_k + " -> " + result); // 한국말이 영어로 번역됨
+
+//                db.append_k(result);    // data 저장
+//                db.k_len += 1;
+//                System.out.println(text_k + " -> " + result); // 한국말이 영어로 번역됨
             } else if (num == 2) {
                 System.out.print("번역할 영어를 입력해 주세요. >");
                 sc.nextLine();
                 String text_e = sc.nextLine();  // 영어 입력
                 String result = translater.translate_EtoK(text_e, option2);
+
+                db.append_e(result);    // data 저장
+                db.e_len += 1;
                 System.out.println(text_e + " -> " + result); // 영어가 한국말로 번역됨
             } else if (num == 3) {
                 System.out.print("맞춤법을 수정할 문장을 입력해 주세요. >");
                 sc.nextLine();
                 String text = sc.nextLine();
                 String result = spellchecker.checker(text,option3);
+
+                db.append_c(result);    // data 저장
+                db.c_len += 1;
                 System.out.println(text + " -> " + result);
             } else if (num == 4) {
                 System.out.print("DataBase Password를 입력하세요 >");
@@ -72,21 +84,24 @@ public class Main {
                 if (db.getPassword().equals(pw)) {
                     while (true) {
                         menu2();
-                        System.out.println("조회할 메뉴를 선택하세요 >");
+                        System.out.print("조회할 메뉴를 선택하세요 >");
                         int d_num = sc.nextInt();
                         if (d_num == 1) {
-                            System.out.println(db.getK_len()+" "+db.getK_list()[0]);
-                            for (int i = 0; i < db.getK_len(); i++) {
-                                System.out.print(db.getK_list()[i]+" ");
+                            for (int i = 0; i < db.k_len; i++) {
+                                System.out.print(db.k_list[i]+" ");
                             }
+                            System.out.println(db.k_len);
+                            System.out.println();
                         } else if (d_num == 2) {
-                            for (int i = 0; i < db.getE_len(); i++) {
-                                System.out.print(db.getE_list()[i] + " ");
+                            for (int i = 0; i < db.e_len; i++) {
+                                System.out.print(db.e_list[i] + " ");
                             }
+                            System.out.println();
                         } else if (d_num == 3) {
-                            for (int i = 0; i < db.getC_len(); i++) {
-                                System.out.print(db.getC_list()[i]+" ");
+                            for (int i = 0; i < db.c_len; i++) {
+                                System.out.print(db.c_list[i]+" ");
                             }
+                            System.out.println();
                         } else if (d_num == 4) {
                             System.out.println("DB조회를 종료 합니다.");
                             break;

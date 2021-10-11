@@ -17,7 +17,7 @@ public class SpellChecker extends DataBase{
         String windowSize = option.getWindowSize();
 
         // 해당 메소드를 실행시키기 위한 올바른 url을 option class 에서 일부 가져옴
-        String url = "https://search.naver.com/search.naver?where=nexearch&sm=top_sly.hst&fbm=0&acr=1&acq=%EB%A7%9E%EC%B6%A4&qdt=0&ie=utf8&query=%EB%A7%9E%EC%B6%A4%EB%B2%95%EA%B2%80%EC%82%AC%EA%B8%B0";
+        String url = option.getSpellcheck_url();
 
         ChromeOptions options = new ChromeOptions();
         // chrome창을 보이게 할건지 안보이게할건지 option class 에서 boolean값을 가져옴
@@ -48,13 +48,8 @@ public class SpellChecker extends DataBase{
         Elements output_tag = doc.select("div.text_area p");
         driver.quit();
 
-        // Data 저장
-        String temp_list[] = super.getC_list();
-        temp_list[super.getC_len()] = output_tag.text();
-        super.setK_list(temp_list);
-        super.setC_len(super.getC_len()+1); // index 번호 1 추가
-
         return output_tag.text();
     }
+
 
 }

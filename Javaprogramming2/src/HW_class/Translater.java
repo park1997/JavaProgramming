@@ -7,6 +7,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Translater extends DataBase{
 
 
@@ -51,14 +54,11 @@ public class Translater extends DataBase{
         // 드라이버 종료
         driver.quit();
 
-        // data 저장
-        String temp_list[] = super.getK_list();
-        temp_list[super.getK_len()] = e_output_tag.text();
-        super.setK_list(temp_list);
-        super.setK_len(super.getK_len()+1); // index 번호 1 추가
-
+        super.k_list[super.k_len] = e_output_tag.text();
+        super.k_len += 1;
         return e_output_tag.text();
     }
+
 
     // 영어를 한국말로 번역
     // Option 클래스에대한 메시지 패싱
@@ -100,14 +100,9 @@ public class Translater extends DataBase{
         // 드라이버 종료
         driver.quit();
 
-        // data 저장
-        String temp_list[] = super.getE_list();
-        temp_list[super.getE_len()] = k_output_tag.text();
-        super.setE_list(temp_list);
-        super.setE_len(super.getE_len()+1); // index 번호 1 추가
-
         return k_output_tag.text();
     }
+
 
 
 }
