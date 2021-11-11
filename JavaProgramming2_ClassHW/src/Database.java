@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Database {
+public class Database{
     private ArrayList<String> tech_arr;
     private ArrayList<String> tech_result;
 

@@ -10,13 +10,16 @@ import org.json.simple.JSONObject;
 
 public class Github{
     private CrawlingOption option = new CrawlingOption();
+    private JSONObject data = new JSONObject();
+
+
     public void crawling(Database db) throws InterruptedException{
         option.setHeadless(true);
         ArrayList<String> tech_arr = db.getTech_arr();
         int interval = option.getInterval();
         String windowSize = option.getWindowSize();
         System.out.println(tech_arr.size());
-        JSONObject jo1 = new JSONObject();
+
 
         for (int i = 0; i < tech_arr.size(); i++) {
             System.out.printf("\"%s\"에 대한 Repository를 Crawling 중입니다. 잠시만 기다려 주세요.",tech_arr.get(i));
@@ -50,13 +53,13 @@ public class Github{
                 }
                 cnt += 1;
             }
+            data.put(tech_arr.get(i), pn_arr);
             System.out.println("-".repeat(10)+tech_arr.get(i)+"관련 open source 검색결과"+"-".repeat(10));
             for (int j = 0; j < pn_arr.size(); j++) {
                 System.out.printf("%d. %s",j,pn_arr.get(j));
                 System.out.println();
             }
             System.out.println();
-
 
         }
     }
@@ -80,5 +83,9 @@ public class Github{
             // Chrome 열기
             driver.get(url);
         }
+    }
+
+    public JSONObject getData() {
+        return data;
     }
 }
