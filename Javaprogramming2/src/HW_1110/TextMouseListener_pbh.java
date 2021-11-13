@@ -27,7 +27,7 @@ public class TextMouseListener_pbh extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JTextField t = (JTextField) e.getSource();
-                la = (JLabel) e.getSource().getText();
+                la = (JLabel) e.getSource();
                 t.setText("");
             }
         });
