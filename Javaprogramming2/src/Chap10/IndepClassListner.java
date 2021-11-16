@@ -17,7 +17,6 @@ public class IndepClassListner extends JFrame {
 
         setSize(350, 150);
         setVisible(true);
-
     }
 
     public static void main(String[] args) {
