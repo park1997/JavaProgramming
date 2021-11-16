@@ -2,6 +2,8 @@ package Chap11;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Vector;
 
 public class ListChangeEx extends JFrame {
@@ -16,11 +18,35 @@ public class ListChangeEx extends JFrame {
         c.setLayout(new FlowLayout());
 
         c.add(new JLabel("이름 입력 후  <Enter> 키"));
+
         c.add(tf);
 
         v.add("박병현");
         v.add("임채균");
 
+        nameList.setVisibleRowCount(5);
+        nameList.setFixedCellWidth(100);
+        c.add(new JScrollPane(nameList));
 
+
+        setSize(500, 500);
+        setVisible(true);
+
+        tf.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JTextField t = (JTextField) e.getSource();
+                v.add(t.getText());
+                t.setText("");
+                nameList.setListData(v);
+            }
+        });
+    }
+
+
+
+
+    public static void main(String[] args) {
+        new ListChangeEx();
     }
 }
