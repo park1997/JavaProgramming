@@ -45,7 +45,7 @@ public class Main {
         Github git = new Github();
         LogIn my_account = new LogIn();
         System.out.println("이 코드를 실행하기 위해 필요한 환경 설정");
-        System.out.println("1. chromedriver 다운로드 받기(현재 본인 컴퓨터에서 사용중인 크롬의 버전과 일치해야함)");
+        System.out.println("1. chromedriver 다운로드 받기(현재 본인 컴퓨터에서 사용중인 크롬의 버전과 일치해야함 청부된 chromedriver의 버전은 96.0.4664.45(공식 빌드) (x86_64)입니다.)");
         System.out.println("2. Jsoup, Selenium, Json 라이브러리 다운 후 적용하기.");
         System.out.println();
 
