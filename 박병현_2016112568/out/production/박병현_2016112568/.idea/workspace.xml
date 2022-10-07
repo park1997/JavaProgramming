@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="868a2f00-404b-4c3a-8610-14e1a3422fab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/Chap13/FileInputStreamEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/Chap13/FileOutputStreamEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/Chap13/FileReaderEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/Chap13/FileWriterEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/Chap13/hi.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/Chap13/hi2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/Chap13/hi3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/FinalTerm/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/FinalTerm/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/FinalTerm/Main2020.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/FinalTerm/Main2020_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/FinalTerm/Main2021_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/FinalTerm/apple.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/HW_1201/ImageView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/HW_1201/실험영상 업로드/BMP/X-logo.bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/HW_1201/실험영상 업로드/BMP/htc_dib.bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/HW_1201/실험영상 업로드/영상크기.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/HW_1201/실험영상 업로드/컬러영상/barbara.raw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/HW_1201/실험영상 업로드/컬러영상/girl.raw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/HW_1201/실험영상 업로드/컬러영상/kim.raw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/HW_1201/실험영상 업로드/회색영상/COUPLE256X256.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/HW_1201/실험영상 업로드/회색영상/GIRL.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Javaprogramming2/src/HW_1201/실험영상 업로드/회색영상/PEPPERS256X256.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/박병현_2016112568.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="21vP7pEmHXfFKeN6OCoFsLOam9M" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="868a2f00-404b-4c3a-8610-14e1a3422fab" name="Default Changelist" comment="" />
+      <created>1638818422737</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638818422737</updated>
+    </task>
+    <servers />
+  </component>
+</project>
